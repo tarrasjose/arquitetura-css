@@ -16,6 +16,7 @@
 }
 
 @media  screen and (min-width: 768px) {
+    .banner__imagem {
         height: calc(100vh - 72px); /*100% da janela do navegado menos o tamanho do cabeçalho com inicio, receitas...
         Esse também saiu do seletor comum e veio para o media na hora de deixar responsivo*/  
     }
