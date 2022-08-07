@@ -1,0 +1,22 @@
+.banner__imagem {
+    background: url('../../img/banner.jpg') no-repeat center / cover;
+    /*
+    background-image: url('../../img/banner.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    */
+    width: 100%;
+}
+
+@media  screen and (min-width: 0) {
+    .banner__imagem {
+        height: calc(100vh - 51px);
+    }
+}
+
+@media  screen and (min-width: 768px) {
+        height: calc(100vh - 72px); /*100% da janela do navegado menos o tamanho do cabeçalho com inicio, receitas...
+        Esse também saiu do seletor comum e veio para o media na hora de deixar responsivo*/  
+    }
+}

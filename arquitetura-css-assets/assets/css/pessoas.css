@@ -1,0 +1,17 @@
+.pessoas {
+    display: flex; /*Colocar uma do lado da outra*/
+    justify-content: space-around; /*Espaço entre todas as caixas*/
+    padding-top: 3rem;
+}
+
+@media  screen and (min-width: 0) {
+    .pessoas {
+        flex-direction: column;
+    } /*Colocando pessoas uma em baixo da outra.*/
+}
+
+@media  screen and (min-width: 768px) {
+    .pessoas {
+        flex-direction: row;
+    }
+}

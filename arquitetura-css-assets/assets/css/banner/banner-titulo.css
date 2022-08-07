@@ -1,0 +1,25 @@
+.banner__titulo {
+    color: #fdfdfd;
+    font-family: Pacifico, cursive;
+    position: absolute; /*absolute ao banner*/
+    left: 50%;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.75);
+    top: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%); /*O primeiro referente ao eixo x e o segundo ao eixo y*/
+    width: 100%; /*O tamanho do título 100% da tela*/
+}
+
+@media  screen and (min-width: 0) {
+    .banner__titulo {
+        font-size: 3rem;
+    }
+}
+
+@media  screen and (min-width: 768px) {
+    .banner__titulo{
+        font-size: 5.0625rem;
+    }
+}
+
+/*Toda propriedade que preciso deixar responsiva, tira do seletor comum e deixa dentro do seletor de media, foi o caso de tirar o font-size: 5.0625rem;*/
